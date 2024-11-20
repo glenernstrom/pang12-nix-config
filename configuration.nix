@@ -113,14 +113,20 @@
      RStudio-with-my-packages = rstudioWrapper.override{
      packages = with rPackages; [ ggplot2 dplyr tidyr ggraph knitr tidyverse ]; };
    in  [
+ 
+   # Develop
    git
    vim
    wget
-
+   
+   # Science
    R-with-my-packages
    RStudio-with-my-packages
+
+   # Office
    libreoffice-qt6-fresh
    texliveFull
+   
    texmaker
    kdePackages.kdenlive
    obs-studio
@@ -133,6 +139,8 @@
    fira
    
 
+   # Utilities
+   mediawriter
   ];
 
 
